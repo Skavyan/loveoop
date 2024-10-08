@@ -3,9 +3,7 @@ using System;
 
 namespace ObjectOrientedPractics1.Model
 {
-    /// <summary>
     /// Представляет товар.
-    /// </summary>
     public class Item
     {
         private static int _idCounter = 1;
@@ -16,14 +14,10 @@ namespace ObjectOrientedPractics1.Model
         private string _info;
         private decimal _cost;
 
-        /// <summary>
         /// Уникальный идентификатор товара.
-        /// </summary>
         public int Id => _id;
 
-        /// <summary>
         /// Название товара.
-        /// </summary>
         public string Name
         {
             get => _name;
@@ -33,10 +27,7 @@ namespace ObjectOrientedPractics1.Model
                 _name = value;
             }
         }
-
-        /// <summary>
         /// Описание товара.
-        /// </summary>
         public string Info
         {
             get => _info;
@@ -46,10 +37,7 @@ namespace ObjectOrientedPractics1.Model
                 _info = value;
             }
         }
-
-        /// <summary>
         /// Стоимость товара.
-        /// </summary>
         public decimal Cost
         {
             get => _cost;
@@ -60,13 +48,7 @@ namespace ObjectOrientedPractics1.Model
                 _cost = value;
             }
         }
-
-        /// <summary>
         /// Конструктор для создания нового товара.
-        /// </summary>
-        /// <param name="name">Название товара.</param>
-        /// <param name="info">Описание товара.</param>
-        /// <param name="cost">Стоимость товара.</param>
         public Item(string name, string info, decimal cost)
         {
             _id = _idCounter++;
@@ -74,10 +56,7 @@ namespace ObjectOrientedPractics1.Model
             Info = info;
             Cost = cost;
         }
-
-        /// <summary>
         /// Переопределяем метод ToString для отображения названия товара в списке.
-        /// </summary>
         public override string ToString()
         {
             return Name;
