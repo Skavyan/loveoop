@@ -96,20 +96,12 @@ namespace ObjectOrientedPractics1.View.Tabs
             DescriptionTextBox.Text = string.Empty;
         }
 
-        /// <summary>
-        /// Метод для отображения ошибки валидации, делает TextBox красным.
-        /// </summary>
-        /// <param name="textBox">Поле с ошибкой.</param>
-        /// <param name="errorMessage">Сообщение об ошибке.</param>
         private void ShowValidationError(Control control, string errorMessage)
         {
             control.BackColor = Color.Red; // Изменение цвета фона
             MessageBox.Show(errorMessage, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        /// <summary>
-        /// Метод для очистки выделения ошибок в TextBox-ах.
-        /// </summary>
         private void ClearValidation()
         {
             NameTextBox.BackColor = SystemColors.Window;
