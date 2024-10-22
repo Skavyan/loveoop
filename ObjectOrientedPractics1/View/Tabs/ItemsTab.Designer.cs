@@ -25,7 +25,6 @@ namespace ObjectOrientedPractics1.View.Tabs
             ItemsListBox = new ListBox();
             AddButton = new Button();
             RemoveButton = new Button();
-            button2 = new Button();
             IdTextBox = new TextBox();
             CostTextBox = new TextBox();
             NameTextBox = new RichTextBox();
@@ -70,16 +69,6 @@ namespace ObjectOrientedPractics1.View.Tabs
             RemoveButton.Text = "Remove";
             RemoveButton.UseVisualStyleBackColor = true;
             RemoveButton.Click += RemoveButton_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(154, 646);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(9, 9);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
             // 
             // IdTextBox
             // 
@@ -202,7 +191,6 @@ namespace ObjectOrientedPractics1.View.Tabs
             Controls.Add(NameTextBox);
             Controls.Add(CostTextBox);
             Controls.Add(IdTextBox);
-            Controls.Add(button2);
             Controls.Add(RemoveButton);
             Controls.Add(AddButton);
             Controls.Add(ItemsListBox);
@@ -220,7 +208,6 @@ namespace ObjectOrientedPractics1.View.Tabs
         private System.Windows.Forms.ListBox ItemsListBox;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button RemoveButton;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox IdTextBox;
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.RichTextBox NameTextBox;
